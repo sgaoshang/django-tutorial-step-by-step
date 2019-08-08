@@ -1,11 +1,11 @@
-#### mariadb
+## mariadb
 ```
 # yum install -y mariadb mariadb-server mariadb-devel(mysqlclient needed)
 # systemctl enable mariadb; systemctl start mariadb
 # mysql -u root -p
 ```
 
-#### create database
+## create database
 ```
 MariaDB [(none)]> DROP DATABASE polls;
 MariaDB [(none)]> CREATE DATABASE polls CHARACTER SET UTF8;
@@ -21,7 +21,7 @@ DATABASES = {
     }
 }
 ```
-#### user
+## user
 ```
 # python manage.py createsuperuser --email admin@example.com --username admin
 # python manage.py makemigrations snippets
