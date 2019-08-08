@@ -6,6 +6,7 @@
 ```
 
 #### create database
+```
 MariaDB [(none)]> DROP DATABASE polls;
 MariaDB [(none)]> CREATE DATABASE polls CHARACTER SET UTF8;
 
@@ -19,7 +20,7 @@ DATABASES = {
         'PORT': '',
     }
 }
-
+```
 #### user
 ```
 # python manage.py createsuperuser --email admin@example.com --username admin
@@ -37,5 +38,6 @@ INSERT INTO polls_choice
 VALUES 
   (1, 'yes', 0, 1),
   (2, 'no', 0, 1);
-```
+
 MariaDB [(none)]> source mysite/polls/schema.sql
+```
